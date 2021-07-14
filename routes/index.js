@@ -5,7 +5,7 @@ const messages = [
   {
     text: "Hi there!",
     user: "Amando",
-    added: new Date()
+    added: new Date(2021,7,14,11,33,23,45)
   },
   {
     text: "Hello World!",
