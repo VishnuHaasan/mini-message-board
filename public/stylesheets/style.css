@@ -6,3 +6,22 @@ body {
 a {
   color: #00B7FF;
 }
+
+.message-container{
+  margin: 30px;
+  border: 2px solid blueviolet;
+  width: 300px;
+}
+
+.message-container:hover{
+  transform: scale(1.05);
+  border: 2px solid greenyellow;
+}
+
+.message-ele{
+  margin-left: 5px;
+}
+
+.new-msg{
+  text-decoration: none;
+}

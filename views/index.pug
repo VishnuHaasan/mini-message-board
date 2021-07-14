@@ -4,7 +4,9 @@ block content
   h1= title
   p Welcome to #{title}
   each message in messages 
-    p= `Text: ${message.text}` 
-    p= `User: ${message.user}` 
-    p= `Time: ${message.added}` 
-  a(href="/new") New Message 
+    - const time = ((new Date()).getHours() - message.added.getHours());
+    .message-container 
+      p.message-ele= `${message.text}` 
+      p.message-ele= `By ${message.user}` 
+      p.message-ele= (time < 1)? `Less than an Hour ago.`: (time==1)? 'An hour ago.': `${time} hours ago.`
+  a(href="/new" class="new-msg") New Message 
