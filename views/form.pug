@@ -1,0 +1,12 @@
+extends layout
+
+block content 
+  h1 New Message 
+  form(method="POST" action="/new")
+    p 
+      |Text: 
+      input(type="text" name="text" id="text")
+    p 
+      |User: 
+      input(type="text" name="user" id="user") 
+    input(type="submit", value="Submit")

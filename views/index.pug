@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  each message in messages 
+    p= `Text: ${message.text}` 
+    p= `User: ${message.user}` 
+    p= `Time: ${message.added}` 
+  a(href="/new") New Message 
